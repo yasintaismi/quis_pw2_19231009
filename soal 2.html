@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Fungsi</h1>
+
+    <h3>Soal No.5</h3>
+    <div id="jawaban5">
+
+    </div>
+
+    <h3>Soal No.6</h3>
+    <div id="jawaban6">
+
+    </div>
+
+
+    <script>
+
+        // Soal No. 5 Fungsi Welcome
+        function Welcome() {
+            return "Selamat datang di universitas teknokrat indonesia";
+        }
+
+        // Tampilkan hasil fungsi Welcome di dalam div dengan id "jawaban5"
+        document.getElementById("jawaban5").innerHTML = Welcome();
+
+        // Soal No. 6 Fungsi Looping
+        function looping(start, end) {
+            // Initialize an empty string to store the result
+            let result = "";
+
+            // Perform a loop from start to end
+            for (let i = start; i <= end; i++) {
+                // Append the current value of 'i' to the result string
+                result += i;
+
+                // Add a comma and space if it's not the last iteration
+                if (i < end) {
+                    result += ", ";
+                }
+            }
+
+            // Return the result string
+            return result;
+        }
+
+        // Tampilkan hasil fungsi looping dengan argumen (3, 7) di dalam div dengan id "jawaban6"
+        document.getElementById("jawaban6").innerHTML = looping(3, 7);
+
+    </script>
+</body>
+</html>
